@@ -1,0 +1,16 @@
+{
+  "name": "strategic-insight-analyst",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:start:frontend\" \"npm:start:backend\"",
+    "start:frontend": "cd apps/frontend && npm run dev",
+    "start:backend": "cd apps/backend && docker-compose up --watch"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "lucide-react": "^0.523.0"
+  }
+}
